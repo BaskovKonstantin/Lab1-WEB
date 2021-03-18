@@ -87,10 +87,24 @@ input[type="submit"]{
 }
 
 
-
 input[type="submit"]:hover{
 	padding: .7em 3em calc(.8em + 3px);
 	background: rgb(255,204,0);
+	border-radius: 15px;
+}
+input[type="submit"]:disabled {
+	margin-top:2px;
+	font-weight: 700;
+	color: Black;
+	text-decoration: none;
+	padding: .5em 2em calc(.8em + 3px);
+	border-radius: 3px;
+	background: rgb(128,128,128);
+	transition: 0.2s;
+}
+input[type="submit"]:disabled:hover{
+	padding: .7em 3em calc(.8em + 3px);
+	background: rgb(128,128,128);
 	border-radius: 15px;
 }
 body {
